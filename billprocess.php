@@ -59,8 +59,6 @@ if(!$conn){
 }
 echo "Connected Successfully";
 
-
-
 ?>
 <?php
  include('component/footer.php');
