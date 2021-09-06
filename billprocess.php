@@ -57,8 +57,20 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if(!$conn){
     die("Connection failed:" . mysqli_connect_error());
 }
-echo "Connected Successfully";
+//echo "Connected Successfully";
 
+
+$query = "INSERT INTO tbl_bill_info (SCNO,CUSID,Fname,Mdate,Pre_reading,Curr_reading,Unit_consumed,demand_type,Bill_amount,FY,Months,P_Status)
+            VALUES('$SCNO','$CUSID','$fname','$mrdate','$preading', '$creading', '$unit', '$demandtype', '$billamount', '$fy', '$months', '$pstatus')";
+
+if (mysqli_query($conn, $query)) {
+    //echo "New record has been added successfully !";
+ } else {
+    echo "Error: " . $query . ":-" . mysqli_error($conn);
+ }
+ mysqli_close($conn);
+
+//mysqli_query($conn,$query);
 ?>
 <?php
  include('component/footer.php');
