@@ -24,7 +24,7 @@
             <option value="" disabled selected>Choose Option</option>
             <option value="5A">5A</option>
             <option value="15A">15A</option>
-            <option value=30A">30A</option>
+            <option value="30A">30A</option>
         </select>
         <br/>
         <label>FY : </label>

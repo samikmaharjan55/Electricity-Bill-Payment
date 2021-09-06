@@ -45,19 +45,7 @@ Bill Amount : <?php echo $billamount ?> <br/><br/>
 
 
 <?php
-
-$pstatus=0;
-$servername = "localhost";
-$username = "neacase";
-$password = "neacase";
-$dbname = "neacase";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-if(!$conn){
-    die("Connection failed:" . mysqli_connect_error());
-}
-//echo "Connected Successfully";
+include('dbconnect.php');
 
 
 $query = "INSERT INTO tbl_bill_info (SCNO,CUSID,Fname,Mdate,Pre_reading,Curr_reading,Unit_consumed,demand_type,Bill_amount,FY,Months,P_Status)
