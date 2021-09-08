@@ -19,12 +19,12 @@ form{
       padding: 5px;
       margin-bottom: 10px;
   }
-  #title{
-      font-size: 90px;
+  #heading{
+      font-size: 50px;
       text-align: center;
       font-weight: bold;
   }
-  .footer{
+  #footer{
     font-size: 30px;
     font-weight: bold;
     
